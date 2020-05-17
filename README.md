@@ -126,7 +126,7 @@ Si après 10 secondes, 'st' ne contient que des ‘16’ et ‘refid’ que des 
 ### « Stratum » NTP
 Si le stratum (colonne "st" du tableau précédent) vaut 16 alors ntp n'est pas synchronisé avec le serveur de temps. 
 Pour information, il y a 15 niveaux de strates dans le chainage des serveurs NTP. La strate 1 sont les serveurs Internet directement câblés sur une horloge atomique. 
-- Si les serveurs NTP de «DMZ Sortante» arrivent à contacter ceux d’Internet, ils ont le  « stratum » de ces serveurs +1, soit 3 ou 4. Les autres serveurs de temps et assets auront alors un stratum <= 7 (selon la DMZ)
+- Si les serveurs NTP de «DMZ Sortante» arrivent à contacter ceux d’Internet, ils ont le  « stratum » de ces serveurs +1, soit 3 ou 4. Les autres serveurs de temps et assets auront alors un stratum inférieur ou égal à 7 (selon la DMZ)
 - Dans le cas où les serveurs se trouvent coupés d’internet, l’horloge locale de ntp-out-1 sera la référence et ce serveur se donnera le stratum 10. Les autres serveurs de temps et assets auront alors un stratum entre 11 et 14 selon le chainage des serveurs.
 
 
