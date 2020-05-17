@@ -108,7 +108,7 @@ RestartSec=30
 C’est bien beau tout ça mais comment contrôler le bel ouvrage ? Pour cela il faut faire une requête sur le service ntpd local et connaitre son statut. C’est possible sur RedHat, AIX et certains appliances.
 
 ### NTPQ
-La commande `ntpq` permet d'avoir le statut. Prenons par exemple un serveur de DMZ entrante. Ce serveur est synchronisé avec les serveurs NTP de DMZ entrante, qui sont eux-mêmes synchronisés avec les serveurs NTP de la DME sortante.
+La commande `ntpq` permet d'avoir le statut. Prenons par exemple un serveur de DMZ entrante. Ce serveur est synchronisé avec les serveurs NTP de DMZ entrante, qui sont eux-mêmes synchronisés avec les serveurs NTP de la DMZ sortante.
 
 ```
 [root@myhost001 ~]# ntpq -pn
